@@ -41,8 +41,8 @@ def threaded_client(connection, player):
                 print("Sending : ", reply)
 
             connection.sendall(pickle.dumps(reply))
-        except:
-            break
+        except socket.error as new_error:
+            print(new_error)
 
     print("Lost connection")
     connection.close()
