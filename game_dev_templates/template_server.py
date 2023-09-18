@@ -4,7 +4,7 @@ import socket
 import pickle
 
 
-server = "192.168.40.250"
+server = "xxx.xxx.xx.xxx"
 port = 5555
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
